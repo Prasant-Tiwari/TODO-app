@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="b">
+   <feGaussianBlur in="SourceGraphic" result="result0" stdDeviation="6"/>
+   <feDiffuseLighting result="result5" surfaceScale="4">
+    <feDistantLight azimuth="235" elevation="45"/>
+   </feDiffuseLighting>
+   <feComposite in="result5" in2="SourceGraphic" k1="1.4" operator="arithmetic" result="fbSourceGraphic"/>
+   <feGaussianBlur in="fbSourceGraphic" result="result0" stdDeviation="6"/>
+   <feSpecularLighting in="result0" result="result1" specularExponent="25" surfaceScale="4">
+    <feDistantLight azimuth="235" elevation="45"/>
+   </feSpecularLighting>
+   <feComposite in="fbSourceGraphic" in2="result1" k2="1" k3="1" operator="arithmetic" result="result4"/>
+   <feComposite in="result4" in2="SourceGraphic" operator="in" result="result2"/>
+  </filter>
+  <filter id="e" x="-.25" y="-.25" width="1.5" height="1.5">
+   <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="3"/>
+   <feColorMatrix result="bluralpha" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.25 0"/>
+   <feOffset dx="7" dy="8" in="bluralpha" result="offsetBlur"/>
+   <feMerge>
+    <feMergeNode in="offsetBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  <filter id="a" x="-.18877" y="-.18877" width="1.3775" height="1.3775">
+   <feGaussianBlur stdDeviation="2.33504"/>
+  </filter>
+  <linearGradient id="d" x1="50.686" x2="200.95" y1="794.85" y2="955" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#29a7ff" offset="0"/>
+   <stop stop-color="#eaecff" offset=".47057"/>
+   <stop stop-color="#ceffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" x1="80.102" x2="208.62" y1="826.58" y2="825.8" gradientTransform="matrix(.96095 0 0 1.5372 171.62 -431.55)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#5985ff" offset="0"/>
+   <stop stop-color="#5985ff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="matrix(1.265 0 0 1.265 -283.31 -983.54)" fill-rule="evenodd">
+  <path transform="matrix(.84749 0 0 1 188.13 28.299)" d="m71.484 785.57h118.75a21.094 20.849 0 0 1 21.094 20.849v130.96a21.094 20.849 0 0 1 -21.094 20.849h-118.75a21.094 20.849 0 0 1 -21.094 -20.849v-130.96a21.094 20.849 0 0 1 21.094 -20.849" fill="url(#d)" filter="url(#e)"/>
+  <path d="m241.36 814.62h112.34c3.613 0 12.464 6.6543 12.522 12.432l0.43416 43.598h-135.95c0-6.0779 0.12913-43.598 0.12913-43.598 0-5.7794 6.9086-12.432 10.522-12.432z" fill="url(#c)"/>
+  <path transform="matrix(.28993 0 0 .34211 297.04 771.6)" d="m145.31 161.72c0 8.198-6.6458 14.844-14.844 14.844s-14.844-6.6458-14.844-14.844 6.6458-14.844 14.844-14.844c8.1511 0 14.777 6.5727 14.843 14.724" fill="#b4b4b4" filter="url(#a)"/>
+  <path transform="matrix(.28993 0 0 .34211 224.19 771.84)" d="m145.31 161.72c0 8.198-6.6458 14.844-14.844 14.844s-14.844-6.6458-14.844-14.844 6.6458-14.844 14.844-14.844c8.1511 0 14.777 6.5727 14.843 14.724" fill="#b4b4b4" filter="url(#a)"/>
+  <path transform="matrix(.84749 0 0 1 188.13 28.299)" d="m87.347 764.9a3.8642 7.2856 0 0 1 3.8642 7.2856v21.738a3.8642 7.2856 0 0 1 -3.8642 7.2856 3.8642 7.2856 0 0 1 -3.8642 -7.2856v-21.738a3.8642 7.2856 0 0 1 3.8642 -7.2856" fill="#b4b4b4" filter="url(#b)"/>
+  <path transform="matrix(.84749 0 0 1 188.13 28.299)" d="m173.05 765.25a3.8642 7.2856 0 0 1 3.8642 7.2856v21.738a3.8642 7.2856 0 0 1 -3.8642 7.2856 3.8642 7.2856 0 0 1 -3.8642 -7.2856v-21.738a3.8642 7.2856 0 0 1 3.8642 -7.2856" fill="#b4b4b4" filter="url(#b)"/>
+  <path d="m253.24 847.41h46.738a1.2863 1.2863 0 0 1 1.2863 1.2863 1.2863 1.2863 0 0 1 -1.2863 1.2863h-46.738a1.2863 1.2863 0 0 1 -1.2863 -1.2863 1.2863 1.2863 0 0 1 1.2863 -1.2863" fill="#d2d2d2" opacity=".79817"/>
+  <path d="m252.46 855.65h61.304a1.2863 1.2863 0 0 1 1.2863 1.2863 1.2863 1.2863 0 0 1 -1.2863 1.2863h-61.304a1.2863 1.2863 0 0 1 -1.2863 -1.2863 1.2863 1.2863 0 0 1 1.2863 -1.2863" fill="#d2d2d2" opacity=".79817"/>
+  <path d="m253.24 839.44h61.33a1.2863 1.2863 0 0 1 1.2863 1.2863 1.2863 1.2863 0 0 1 -1.2863 1.2863h-61.33a1.2863 1.2863 0 0 1 -1.2863 -1.2863 1.2863 1.2863 0 0 1 1.2863 -1.2863" fill="#d2d2d2" opacity=".79817"/>
+  <path d="m354.2 837.54a6.3627 7.5077 0 0 1 6.3627 7.5077v12.609a6.3627 7.5077 0 0 1 -6.3627 7.5077 6.3627 7.5077 0 0 1 -6.3627 -7.5077v-12.609a6.3627 7.5077 0 0 1 6.3627 -7.5077" fill="#c8ff05" fill-opacity=".65969" opacity=".58257"/>
+ </g>
+</svg>
